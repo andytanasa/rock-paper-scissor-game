@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>The Rock Paper Scissor Game</title>
+</head>
+
+<body>
+    <header class="header-top">
+        <h1>The Best <span>Rock</span> - <span>Paper</span> - <span>Scissor</span> Game!!!</h1>
+    </header>
+    <main>
+        <div class="main_user-computer">
+            <p class="main_user" data-user>Player</p>
+            <p class="main_computer">Computer</p>
+        </div>
+        <div class="main-counter">
+            <div class="player_counter" data-playerCount>0</div>
+            <div class="dash">-</div>
+            <div class="computer_counter" data-computerCount>0</div>
+        </div>
+        <div class="game">
+            <h3 data-update-text>Good Luck!!!</h3>
+            <div class="d-flex choices">
+                <a href="#"><i class="far fa-hand-rock fa-4x" data-rock></i></a>
+                <a href="#"><i class="far fa-hand-paper fa-4x" data-paper></i></a>
+                <a href="#"><i class="far fa-hand-scissors fa-4x" data-scissors></i></a>
+            </div>
+
+        </div>
+        <div class="button-group">
+            <button type="button" class="btn btn-start">Start</button>
+            <button type="button" class="btn btn-reset">Reset</button>
+        </div>
+    </main>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter your name:
+                <label for="name">
+                    <input class="user_name" type="text" id="name" name="name" autocomplete="off">
+                </label>
+            </p>
+            <button type="button" class="btn btn-start" id="userUpdateName">Press to update your name</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
